@@ -1,0 +1,45 @@
+// 定义所有的less 文件，相对引用
+declare module '*.less' {
+    const content: any;
+    export default content;
+}
+
+declare namespace JSX {
+    interface IntrinsicElements {
+        [elemName: string]: any;
+    }
+}
+
+// 定义所有的png文件
+declare module '*.png';
+
+// 定义所有的jpg文件
+declare module '*.jpg';
+
+// 定义所有的jpg文件
+declare module '*.webp';
+
+// 定义所有的jpeg文件
+declare module '*.jpeg';
+
+// 定义所有的mp4文件
+declare module '*.mp4';
+
+// 定义所有的css 文件，相对引用
+declare module '*.css' {
+    const content: any;
+    export default content;
+}
+
+// 定义window变量
+interface Window {
+    r: string[];
+}
+
+declare const location: any;
+
+declare const Sketchfab: any;
+
+declare const jigsaw: any;
+
+declare const ClipboardJS: any;

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- 主页 -->
+  <url>
+    <loc>https://meshivo.com/</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://oss.api-service.net.cn/mesh/images/logo.png</image:loc>
+      <image:title>Meshivo 3D Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- 登录页 -->
+  <url>
+    <loc>https://meshivo.com/app/login</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 博客页 -->
+  <url>
+    <loc>https://meshivo.com/blog</loc>
+    <lastmod>2025-04-29T15:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 定价页 -->
+  <url>
+    <loc>https://meshivo.com/price</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ页 -->
+  <url>
+    <loc>https://meshivo.com/faq</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 隐私政策页 -->
+  <url>
+    <loc>https://meshivo.com/privacy</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 服务条款页 -->
+  <url>
+    <loc>https://meshivo.com/service</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 在线3D查看器页 -->
+  <url>
+    <loc>https://meshivo.com/online-viewer</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 3D模型压缩工具页 -->
+  <url>
+    <loc>https://meshivo.com/model-compression</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 文件转换工具页 -->
+  <url>
+    <loc>https://meshivo.com/file-converter</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 英文主页 -->
+  <url>
+    <loc>https://meshivo.com/en/</loc>
+    <lastmod>2025-09-29T15:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

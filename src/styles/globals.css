@@ -1,0 +1,288 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable rule-empty-line-before */
+/* stylelint-disable custom-property-empty-line-before */
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@import 'highlight.js/styles/monokai.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    --font-sans:
+        ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-mono:
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+        monospace;
+    --container-2xl: 1400px;
+    --radius: 0.5rem;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+@layer utilities {
+    /* 全局去掉所有 number input 的加减按钮 */
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    *:focus-visible {
+        --tw-ring-offset-shadow: 0 0 #0000 !important;
+        --tw-ring-shadow: 0 0 #0000 !important;
+        box-shadow:
+            var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
+    }
+
+    .focus-visible\:ring-0 {
+        --tw-ring-offset-shadow: 0 0 #0000 !important;
+        --tw-ring-shadow: 0 0 #0000 !important;
+        box-shadow:
+            var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
+    }
+
+    .focus-visible\:ring-offset-0 {
+        --tw-ring-offset-width: 0px !important;
+    }
+
+    /* 添加以下滚动条样式 */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-100% - var(--gap)));
+        }
+    }
+
+    .animate-marquee {
+        animation: marquee var(--duration) linear infinite;
+    }
+
+    /* 添加容器最大宽度工具类 */
+    .max-w-container {
+        max-width: 1280px;
+    }
+
+    /* 玻璃 UI 卡片效果 - 优化黑暗主题 */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.12) !important;
+        backdrop-filter: blur(24px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .dark .glass-card {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .glass-card:hover {
+        background: rgba(255, 255, 255, 0.16) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .dark .glass-card:hover {
+        background: rgba(255, 255, 255, 0.12) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    /* 拟态毛玻璃按钮效果 - 优化黑暗主题 */
+    .neumorphism-glass {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.2),
+            inset 0 1px 0 rgba(255, 255, 255, 0.25),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .neumorphism-glass:hover {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.12));
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        box-shadow:
+            0 12px 40px rgba(0, 0, 0, 0.25),
+            inset 0 1px 0 rgba(255, 255, 255, 0.35),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .neumorphism-glass:active {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.18));
+        box-shadow:
+            0 4px 16px rgba(0, 0, 0, 0.3),
+            inset 0 2px 4px rgba(0, 0, 0, 0.1),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+    }
+
+    /* 深色主题下的拟态毛玻璃效果 - 优化 */
+    .dark .neumorphism-glass {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.4),
+            inset 0 1px 0 rgba(255, 255, 255, 0.12),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .dark .neumorphism-glass:hover {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        box-shadow:
+            0 12px 40px rgba(0, 0, 0, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.18),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .dark .neumorphism-glass:active {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.15));
+        box-shadow:
+            0 4px 16px rgba(0, 0, 0, 0.6),
+            inset 0 2px 4px rgba(0, 0, 0, 0.2),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    /* 高级黑暗主题卡片效果 */
+    .dark-premium-card {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.4),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .dark-premium-card:hover {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow:
+            0 16px 64px rgba(0, 0, 0, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    /* 渐变文字效果 */
+    .gradient-text-primary {
+        background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* 微妙的发光效果 */
+    .subtle-glow {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    .subtle-glow:hover {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+    }
+
+    /* 评价卡片专用样式 */
+    .testimonial-card {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.4),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .testimonial-card:hover {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow:
+            0 16px 64px rgba(0, 0, 0, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    /* 星级评分动画 */
+    @keyframes starGlow {
+        0%,
+        100% {
+            filter: drop-shadow(0 0 2px rgba(251, 191, 36, 0.5));
+        }
+        50% {
+            filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.8));
+        }
+    }
+
+    .star-rating:hover .star {
+        animation: starGlow 2s ease-in-out infinite;
+    }
+
+    /* 引用符号特效 */
+    .quote-icon {
+        position: relative;
+    }
+
+    .quote-icon::before {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        border-radius: inherit;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .quote-icon:hover::before {
+        opacity: 1;
+    }
+}

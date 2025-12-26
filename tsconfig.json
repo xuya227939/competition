@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "jsx": "react-jsx",
+        "lib": ["esnext", "dom", "dom.iterable"],
+        "useDefineForClassFields": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./src",
+        "rootDirs": ["./src"],
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "paths": {
+            "@/*": ["./*"],
+            "@assets/*": ["assets/*"],
+            "@components/*": ["components/*"],
+            "@locales/*": ["locales/*"],
+            "@store/*": ["store/*"],
+            "@pages/*": ["pages/*"],
+            "@utils/*": ["utils/*"],
+            "@service/*": ["service/*"]
+        },
+        "resolveJsonModule": true,
+        "typeRoots": ["node", "node_modules/@types", "./typings"],
+        "types": ["node"],
+        "allowJs": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "importHelpers": true,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "skipLibCheck": true
+    },
+    "include": ["./src/**/*", "./declaration.d.ts", "src/lib"],
+    "exclude": ["node_modules"]
+}
