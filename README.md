@@ -1,8 +1,8 @@
 ## 基础设施支持
 
-<div align="left">
+<div align="right">
 
-**本项目由阿里云 ESA 提供加速、计算和保护** ➡️ (!aliyun)[./aliyun.png]
+**本项目由阿里云 ESA 提供加速、计算和保护** ➡️ ![阿里云 ESA](./aliyun.png)
 
 </div>
 
