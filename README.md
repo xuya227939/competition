@@ -1,3 +1,11 @@
+## 基础设施支持
+
+<div align="left">
+
+**本项目由阿里云 ESA 提供加速、计算和保护** ➡️ (!aliyun)[./aliyun.png]
+
+</div>
+
 # Meshivo 3D - AI 驱动的 3D 模型生成平台
 
 一个革命性的 AI 3D 生成平台，通过自然语言描述快速创建高质量的 3D 模型，让创意工作者能够以前所未有的速度将想法转化为现实。
@@ -318,11 +326,3 @@ MIT License
 欢迎提交 Issue 和 Pull Request！
 
 ---
-
-## 基础设施支持
-
-<div align="right">
-
-**本项目由阿里云 ESA 提供加速、计算和保护** ➡️ [!aliyun](./aliyun.png)
-
-</div>
