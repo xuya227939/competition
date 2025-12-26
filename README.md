@@ -1,10 +1,6 @@
 ## 基础设施支持
 
-<div align="right">
-
 **本项目由阿里云 ESA 提供加速、计算和保护** ➡️ ![阿里云 ESA](./aliyun.png)
-
-</div>
 
 # Meshivo 3D - AI 驱动的 3D 模型生成平台
 
