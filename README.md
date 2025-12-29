@@ -1,324 +1,320 @@
-## 基础设施支持
+#Meshivo 3D - AI driven 3D model generation platform
 
-**本项目由阿里云 ESA 提供加速、计算和保护** ➡️ ![阿里云 ESA](./aliyun.png)
+A revolutionary AI 3D generation platform that quickly creates high-quality 3D models through natural language description, allowing creative workers to transform ideas into reality at an unprecedented speed.
 
-# Meshivo 3D - AI 驱动的 3D 模型生成平台
+##Project Overview
 
-一个革命性的 AI 3D 生成平台，通过自然语言描述快速创建高质量的 3D 模型，让创意工作者能够以前所未有的速度将想法转化为现实。
-
-## 项目概述
-
-Meshivo 3D 是一个基于 AI 技术的 3D 模型生成平台，致力于降低 3D 建模的技术门槛，让任何人都能通过简单的文本描述快速生成专业级的 3D 模型。平台集成了先进的自然语言处理、3D 几何生成、智能材质匹配等核心技术，为游戏开发、影视制作、建筑设计、产品设计等创意行业提供强大的工具支持。
+Meshivo 3D is a 3D model generation platform based on AI technology, dedicated to lowering the technical threshold of 3D modeling and enabling anyone to quickly generate professional grade 3D models through simple text descriptions. The platform integrates advanced core technologies such as natural language processing, 3D geometry generation, and intelligent material matching, providing powerful tool support for creative industries such as game development, film and television production, architectural design, and product design.
 
 ---
 
-## 一、实用性 (Practicality)
+##1、 Practicality
 
-### 1.1 解决实际痛点
+###1.1 Addressing Practical Pain Points
 
-**传统 3D 建模的挑战：**
+**The challenges of traditional 3D modeling:**
 
-- 需要数小时甚至数天的建模时间
-- 要求专业的 3D 建模软件技能（如 Blender、Maya、3ds Max）
-- 复杂的材质和纹理设置流程
-- 大量的手动调整和优化工作
-- 高昂的学习成本和时间投入
+-It takes several hours or even days of modeling time
+-Require professional 3D modeling software skills (such as Blender, Maya, 3ds Max)
+-Complex material and texture setting process
+-A large amount of manual adjustment and optimization work
+-High learning costs and time investment
 
-**Meshivo 3D 的解决方案：**
+**Meshivo 3D's solution:**
 
-- **文本到 3D 转换**：用户只需用自然语言描述想要创建的 3D 模型，AI 系统即可自动生成相应的 3D 几何体，将建模时间从数小时缩短到几分钟
-- **智能材质匹配**：内置超过 1000 种高质量材质，AI 系统能够智能分析模型特征，自动推荐最合适的材质组合，大幅减少手动调整
-- **一键优化功能**：自动修复拓扑问题、优化多边形数量、平滑表面处理、细节增强，确保生成模型的质量
+-Text to 3D Conversion: Users only need to describe the 3D model they want to create in natural language, and the AI system can automatically generate the corresponding 3D geometry, reducing modeling time from hours to minutes
+-* * Intelligent Material Matching * *: Built in over 1000 high-quality materials, AI system can intelligently analyze model features, automatically recommend the most suitable material combination, greatly reducing manual adjustments
+-* * One click optimization function * *: automatically fixes topology issues, optimizes polygon quantity, smooths surface treatment, enhances details, ensuring the quality of generated models
 
-### 1.2 广泛的应用场景
+###1.2 Wide range of application scenarios
 
-**游戏开发：**
+**Game development:**
 
-- 快速生成角色原型和概念模型
-- 环境建模和场景搭建
-- 道具和装备设计
-- 大幅缩短开发周期
+-Quickly generate character prototypes and conceptual models
+-Environmental modeling and scene construction
+-Prop and equipment design
+-Significantly shorten the development cycle
 
-**影视制作：**
+**Film and television production:**
 
-- 快速生成特效模型和场景元素
-- 概念设计和可视化预览
-- 让创作者专注于创意表达而非技术实现
+-Quickly generate special effects models and scene elements
+-Conceptual design and visual preview
+-Let creators focus on creative expression rather than technical implementation
 
-**建筑设计：**
+**Architectural Design:**
 
-- 快速生成建筑概念模型
-- 可视化展示和方案比较
-- 设计迭代和优化
+-Quickly generate architectural conceptual models
+-Visual display and scheme comparison
+-Design iteration and optimization
 
-**产品设计：**
+**Product Design:**
 
-- 快速迭代设计概念
-- 生成多个设计方案进行比较
-- 产品原型可视化
+-Rapid iteration design concept
+-Generate multiple design proposals for comparison
+-Product prototype visualization
 
-### 1.3 完整的工具链
+###1.3 Complete toolchain
 
-- **在线 3D 查看器**：支持 360 度旋转、缩放、平移，实时预览模型效果
-- **文件格式转换**：支持 OBJ、FBX、GLTF、STL 等多种主流 3D 格式
-- **模型压缩**：优化模型文件大小，提高加载和传输效率
-- **社区功能**：模型分享、协作编辑、版本控制
-- **多语言支持**：支持中文、英文、日文、韩文、印地语，服务全球用户
+-Online 3D Viewer: Supports 360 degree rotation, scaling, and translation, allowing for real-time preview of model effects
+-* * File format conversion * *: Supports multiple mainstream 3D formats such as OBJ, FBX, GLTF, STL, etc
+-Model Compression: Optimize the size of model files to improve loading and transfer efficiency
+-* * Community Features * *: Model Sharing, Collaborative Editing, Version Control
+-* * Multi language support * *: Supports Chinese, English, Japanese, Korean, Hindi, serving global users
 
-### 1.4 成本效益
+###1.4 Cost effectiveness
 
-- **降低人力成本**：减少对专业 3D 建模师的需求
-- **提高工作效率**：从数小时缩短到几分钟，效率提升 10-100 倍
-- **质量保证**：AI 生成的模型具有一致的高质量
-- **易于使用**：无需专业技能，任何人都能快速上手
-
----
-
-## 二、创意性 (Creativity)
-
-### 2.1 创新的 AI 技术应用
-
-**自然语言理解：**
-
-- 采用先进的 NLP 技术，能够理解复杂的描述性语言
-- 支持形状和几何特征描述、材质和纹理要求、颜色和光照效果、风格和艺术方向
-- 具备上下文理解能力，确保生成的模型符合用户的真实意图
-
-**多风格支持：**
-
-- **写实风格**：生成高度逼真的 3D 模型，适用于产品展示、建筑可视化
-- **卡通风格**：创建可爱的卡通风格模型，适用于游戏、动画等娱乐内容
-- **抽象风格**：生成具有艺术感的抽象模型，适用于概念设计和艺术创作
-- **科幻风格**：创建具有未来感的科幻模型，适用于科幻游戏和电影
-
-### 2.2 智能材质系统
-
-**丰富的材质库：**
-
-- 金属材质（不锈钢、铜、铁等）
-- 石材材质（大理石、花岗岩、石灰石等）
-- 木材材质（橡木、松木、胡桃木等）
-- 织物材质（丝绸、棉布、皮革等）
-- 特殊材质（玻璃、陶瓷、塑料等）
-
-**智能匹配算法：**
-
-- 基于机器学习的算法分析模型特征
-- 自动推荐最合适的材质组合
-- 支持自定义材质和纹理
-
-### 2.3 创新的交互体验
-
-**实时预览系统：**
-
-- 多角度查看：支持 360 度旋转、缩放、平移
-- 光照预览：实时显示不同光照条件下的模型效果
-- 材质预览：实时切换和预览不同材质效果
-
-**协作功能：**
-
-- 项目共享：团队成员可以共享项目文件，进行协作编辑
-- 版本控制：自动保存模型版本，支持版本回退和比较
-- 评论系统：团队成员可以在模型上添加评论和标注
-
-### 2.4 开放性和扩展性
-
-- **API 集成**：提供 RESTful API 接口，支持通过 HTTP 请求调用功能
-- **SDK 支持**：提供多种编程语言的 SDK，方便开发者集成
-- **Webhook 支持**：支持实时通知和事件回调
-- **插件系统**：支持第三方插件扩展功能
+-* * Reduce labor costs * *: Reduce the demand for professional 3D modelers
+-* * Improve work efficiency * *: Shorten from hours to minutes, increase efficiency by 10-100 times
+-* * Quality Assurance * *: AI generated models have consistent high quality
+-* * Easy to use * *: No professional skills required, anyone can quickly get started
 
 ---
 
-## 三、技术深度 (Technical Depth)
+##2、 Creativity
 
-### 3.1 前端技术架构
+###2.1 Innovative AI Technology Applications
 
-**现代化技术栈：**
+**Natural language understanding:**
 
-- **React 18 + TypeScript**：类型安全、组件化开发、高性能渲染
-- **Vike (原 vite-plugin-ssr)**：服务端渲染（SSR），提升 SEO 和首屏加载速度
-- **React Three Fiber + Drei**：基于 React 的 Three.js 封装，提供声明式的 3D 渲染能力
-- **Tailwind CSS + shadcn/ui**：现代化的 UI 设计系统，快速构建美观的界面
-- **Zustand**：轻量级状态管理，高效的数据流管理
+-Adopting advanced NLP technology, able to understand complex descriptive language
+-Support shape and geometric feature description, material and texture requirements, color and lighting effects, style and artistic direction
+-Having contextual understanding ability to ensure that the generated model conforms to the user's true intention
 
-**性能优化：**
+**Multi style support:**
 
-- **代码分割**：按需加载，减少初始包体积
-- **懒加载**：图片和 3D 模型按需加载
-- **缓存策略**：智能缓存常用模型和材质，提高响应速度
-- **并行处理**：支持多任务并行处理，提高整体效率
+-Realistic Style: Generate highly realistic 3D models suitable for product display and architectural visualization
+-Cartoon Style: Create cute cartoon style models suitable for entertainment content such as games and animations
+-* * Abstract Style * *: Generate abstract models with artistic sense, suitable for conceptual design and artistic creation
+-* * Sci Fi Style * *: Create futuristic sci-fi models suitable for sci-fi games and movies
 
-### 3.2 3D 渲染技术
+###2.2 Intelligent Material System
 
-**Three.js 集成：**
+**Rich material library:**
 
-- 基于 WebGL 的高性能 3D 渲染
-- 支持多种几何体：立方体、球体、圆柱体、平面、圆环等
-- 实时渲染和交互：相机控制（轨道、缩放、平移）、光照系统（环境光、方向光）、网格辅助线
+-Metal materials (stainless steel, copper, iron, etc.)
+-Stone material (marble, granite, limestone, etc.)
+-Wood material (oak, pine, walnut, etc.)
+-Fabric materials (silk, cotton, leather, etc.)
+-Special materials (glass, ceramic, plastic, etc.)
 
-**渲染优化：**
+**Intelligent matching algorithm:**
 
-- 光照计算优化
-- 阴影质量提升
-- 反射效果增强
-- 纹理分辨率优化
+-Analysis of Model Features Based on Machine Learning Algorithms
+-Automatically recommend the most suitable material combination
+-Support custom materials and textures
 
-### 3.3 AI 技术集成
+###2.3 Innovative interactive experience
 
-**自然语言处理：**
+**Real time preview system:**
 
-- 先进的 NLP 技术理解用户描述
-- 上下文关系理解
-- 多语言支持（中英日韩印地语）
+-Multi angle viewing: supports 360 degree rotation, scaling, and translation
+-Lighting Preview: Real time display of model effects under different lighting conditions
+-Material Preview: Real time switching and previewing of different material effects
 
-**3D 几何生成：**
+**Collaboration function:**
 
-- 基于深度学习的 3D 模型生成算法
-- 自动拓扑优化
-- 几何细节增强
+-Project Sharing: Team members can share project files and collaborate on editing
+-Version control: Automatically save model versions, support version rollback and comparison
+-Comment system: Team members can add comments and annotations on the model
 
-**智能材质匹配：**
+###2.4 Openness and Scalability
 
-- 机器学习算法分析模型特征
-- 自动材质推荐
-- 材质库管理
-
-### 3.4 架构设计
-
-**模块化设计：**
-
-- 组件化架构，易于维护和扩展
-- 清晰的代码组织结构
-- 类型安全的 TypeScript 实现
-
-**服务端渲染（SSR）：**
-
-- 使用 Vike 实现 SSR，提升 SEO 和首屏性能
-- 支持静态站点生成（SSG）
-- 优化的构建流程
-
-**多语言支持：**
-
-- 基于 react-intl-universal 的国际化方案
-- 支持 5 种语言：中文、英文、日文、韩文、印地语
-- 动态语言切换
-
-**错误处理：**
-
-- 全局错误边界（Error Boundary）
-- 优雅的错误提示
-- 错误日志记录
-
-### 3.5 开发工具链
-
-**构建工具：**
-
-- **Vite**：快速的构建工具，支持 HMR（热模块替换）
-- **TypeScript**：类型检查，提高代码质量
-- **ESLint + Prettier**：代码规范和格式化
-
-**测试和部署：**
-
-- 单元测试支持
-- 自动化构建和部署
-- CI/CD 集成
+-API Integration: Provides RESTful API interfaces and supports calling functionality through HTTP requests
+-SDK Support: Provides SDKs for multiple programming languages for developers to integrate easily
+-Webhook Support: Supports real-time notifications and event callbacks
+-* * Plugin System * *: Supports third-party plugin extension functions
 
 ---
 
-## 技术栈
+##3、 Technical Depth
 
-- **前端框架**: React 18 + TypeScript
-- **3D 引擎**: React Three Fiber + Drei + Three.js
-- **SSR 框架**: Vike (vite-plugin-ssr)
-- **UI 组件**: Tailwind CSS + shadcn/ui
-- **状态管理**: Zustand
-- **国际化**: react-intl-universal
-- **构建工具**: Vite
-- **包管理**: pnpm
+###3.1 Front end technical architecture
 
-## 快速开始
+**Modern Technology Stack:**
 
-### 安装依赖
+-React 18+TypeScript: Type safe, component-based development, high-performance rendering
+-* * Vike (formerly Vite plugin ssr) * *: Server side rendering (SSR) to improve SEO and first screen loading speed
+-React Three Fiber+Drei: Three.js encapsulation based on React, providing declarative 3D rendering capabilities
+-Tailwind CSS+shadcn/ui: A modern UI design system that quickly builds beautiful interfaces
+-Zustand: Lightweight state management, efficient data flow management
+
+**Performance optimization:**
+
+-* * Code Segmentation * *: Load on Demand, Reduce Initial Package Volume
+-Lazy loading: Images and 3D models are loaded on demand
+-* * Cache Strategy * *: Intelligent caching of commonly used models and materials to improve response speed
+-* * Parallel Processing * *: Supports multitasking parallel processing to improve overall efficiency
+
+###3.2 3D rendering technology
+
+**Three.js integration:**
+
+-High performance 3D rendering based on WebGL
+-Supports multiple geometries: cube, sphere, cylinder, plane, ring, etc
+-Real time rendering and interaction: camera control (track, zoom, pan), lighting system (ambient light, directional light), grid guide lines
+
+**Rendering optimization:**
+
+-Optimization of Lighting Calculation
+-Shadow quality improvement
+-Enhanced reflection effect
+-Texture resolution optimization
+
+###3.3 AI Technology Integration
+
+**Natural Language Processing:**
+
+-Advanced NLP technology to understand user descriptions
+-Understanding contextual relationships
+-Multi language support (Chinese, English, Japanese, Korean, Hindi)
+
+**3D geometry generation:**
+
+-3D Model Generation Algorithm Based on Deep Learning
+-Automatic topology optimization
+-Geometric detail enhancement
+
+**Intelligent material matching:**
+
+-Machine learning algorithms analyze model features
+-Automatic material recommendation
+-Material library management
+
+###3.4 Architecture Design
+
+**Modular design:**
+
+-Component based architecture, easy to maintain and expand
+-Clear code organization structure
+-Typesafe TypeScript Implementation
+
+**Server rendering (SSR):**
+
+-Implementing SSR with Vike to Improve SEO and First Screen Performance
+-Support static site generation (SSG)
+-Optimized construction process
+
+**Multi language support:**
+
+-Internationalization solution based on React Intl Universal
+-Supports 5 languages: Chinese, English, Japanese, Korean, Hindi
+-Dynamic language switching
+
+**Error handling:**
+
+-Global Error Boundary
+-Elegant error message
+-Error logging
+
+###3.5 Development toolchain
+
+**Building tools:**
+
+-Vite: A fast build tool that supports HMR (hot module replacement)
+-TypeScript: Type checking to improve code quality
+-ESLint+Prettier: Code specification and formatting
+
+**Testing and Deployment:**
+
+-Unit testing support
+-Automated construction and deployment
+-CI/CD integration
+
+---
+
+##Technology Stack
+
+-Front end framework: React 18+TypeScript
+-3D Engine: React Three Fiber+Drei+Three.js
+-SSR Framework: Vike (vite plugin ssr)
+-* * UI Components * *: Tailwind CSS+shadcn/ui
+-* * Status Management * *: Zustand
+-Internationalization: React Intl Universal
+-* * Building Tool * *: Vite
+-* * Package Management * *: pnpm
+
+##Quick Start
+
+###Install dependencies
 
 ```bash
 pnpm install
 ```
 
-### 启动开发服务器
+###Start the development server
 
 ```bash
 pnpm dev
 ```
 
-访问 [http://localhost:3000](http://localhost:3000) 查看应用。
+Visit[ http://localhost:3000 ]( http://localhost:3000 ）View the application.
 
-### 构建生产版本
+###Build production version
 
 ```bash
 pnpm build
 ```
 
-## 项目结构
+##Project Structure
 
 ```
 src/
-├── components/          # 组件库
-│   ├── scene/         # 3D 场景组件
-│   ├── modelPreView/  # 模型预览组件
-│   ├── ui/            # UI 组件
-│   └── ...
-├── pages/              # 页面组件
-│   ├── index/         # 首页
-│   ├── online-viewer/ # 在线查看器
-│   ├── file-converter/ # 文件转换
-│   └── ...
-├── store/              # 状态管理
-├── locales/            # 国际化资源
-├── utils/              # 工具函数
-└── renderer/           # SSR 渲染配置
+∝ - Components/# Component Library
+│∝ - Scene/# 3D Scene Components
+│∝ - modelPreView/# Model Preview Component
+│∝ - UI/# UI Components
+│   └── . ..
+∝ - pages/# page components
+│∝ - index/# homepage
+│∝ - Online Viewer/# Online Viewer
+│∝ - file converter/# file conversion
+│   └── . ..
+∝ - Store/# Status Management
+∝ - Locales/# International Resources
+∝ - Utilities/# utility functions
+└ - renderer/# SSR rendering configuration
 ```
 
-## 核心功能
+##Core functions
 
-### AI 文本到 3D 转换
+###AI Text to 3D Conversion
 
-- 自然语言理解
-- 上下文关系理解
-- 自动 3D 几何生成
+-Natural Language Understanding
+-Understanding contextual relationships
+-Automatic 3D geometry generation
 
-### 智能材质匹配
+###Intelligent material matching
 
-- 1000+ 高质量材质库
-- 机器学习材质推荐
-- 自定义材质支持
+-1000+high-quality material library
+-Machine learning material recommendation
+-Custom material support
 
-### 一键优化
+###One click optimization
 
-- 自动拓扑修复
-- 多边形数量优化
-- 表面平滑处理
-- 细节增强
+-Automatic topology repair
+-Optimization of polygon quantity
+-Surface smoothing treatment
+-Detail enhancement
 
-### 多格式支持
+###Multi format support
 
 - OBJ、FBX、GLTF、STL
-- 专业软件格式支持
-- 格式转换工具
+-Professional software format support
+-Format conversion tool
 
-## 浏览器支持
+##Browser support
 
 - Chrome 90+
 - Firefox 88+
 - Safari 14+
 - Edge 90+
 
-## 许可证
+##License
 
 MIT License
 
-## 贡献
+##Contribution
 
-欢迎提交 Issue 和 Pull Request！
+Welcome to submit Issue and Pull Requests!
 
 ---
